@@ -6,14 +6,14 @@ favicon: /-/chhabrahardik09.github.io/blockpage/favicon.ico
 
 
 -- fastn.dependency: fastn-community.github.io/footer
--- fastn.dependency: fastn-community.github.io/midnight-rush-cs
+-- fastn.dependency: fastn-community.github.io/midnight-rush-cs as cs
 -- fastn.dependency: fastn-community.github.io/midnight-rush-typography as typo
 -- fastn.dependency: fastn-community.github.io/typography
 -- fastn.dependency: fastn-community.github.io/doc-site as ds
 -- fastn.dependency: fifthtry.github.io/dark-mode-switcher
 
 
--- fastn.auto-import: fastn-community.github.io/midnight-rush-cs
+-- fastn.auto-import: cs
 -- fastn.auto-import: ds
 -- fastn.auto-import: chhabrahardik09.github.io/blockpage/FASTN/my-ds
 -- fastn.auto-import: chhabrahardik09.github.io/blockpage/assets

@@ -1,7 +1,7 @@
 -- import: ds
 -- import: ds/common
 -- import: fastn-community.github.io/footer
--- import: fastn-community.github.io/midnight-rush-cs as cs
+-- import: cs
 
 ;; ********* my-ds document **********
 
