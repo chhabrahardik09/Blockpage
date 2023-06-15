@@ -9,7 +9,7 @@
 
 -- component page:
 optional caption title:
-ftd.color-scheme colors: $midnight-rush-cs.main
+ftd.color-scheme colors: $cs.main
 
 
 -- ftd.column:
