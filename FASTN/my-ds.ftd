@@ -1,6 +1,7 @@
 -- import: ds
 -- import: ds/common
 -- import: fastn-community.github.io/footer
+-- import: fastn-community.github.io/midnight-rush-cs as cs
 
 ;; ********* my-ds document **********
 
@@ -30,6 +31,7 @@ document-description: $page.document-description
 document-image: $page.document-image
 github-url: https://github.com/fastn-community/doc-site/
 github-icon: true
+colors: $cs.main
 
 -- ds.page.footer:
 

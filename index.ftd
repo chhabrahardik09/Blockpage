@@ -1,21 +1,21 @@
+-- import: fifthtry.github.io/dark-mode-switcher as dms
+
 -- page: BlogPage
 
 
 
 
--- end: page
 
 
 -- component page:
 optional caption title:
-ftd.color-scheme colors: $cs
+ftd.color-scheme colors: $midnight-rush-cs.main
 
 
 -- ftd.column:
 color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
 width: fill-container
-height: fill-container
-colors: $page.colors
 
 -- header:
 
@@ -23,9 +23,19 @@ colors: $page.colors
 
 -- main2:
 
+-- dms.dark-mode-switcher-float:
+
 -- end: ftd.column
 
 -- end: page
+
+
+
+
+
+
+
+
 
 
 
@@ -34,78 +44,73 @@ colors: $page.colors
 
 -- ftd.row:
 width: fill-container
-padding-top.px: 10
-background.solid: $inherited.colors.background.base
-
-
+background.solid: $inherited.colors.background.step-1
+spacing.fixed.px: 48
+padding-horizontal.px: 40
+padding-vertical.px: 40
 
 -- ftd.text: **Fastn**
 padding-top.px: 10
-role: $inherited.types.copy-regular
+role: $inherited.types.heading-small
 margin-left.px: 5
+align-self: center
+
 
 -- ftd.row:
 padding-top.px: 10
-spacing: space-evenly
-
--- ftd.text: **Label**
-link: http://127.0.0.1:8000/
+spacing.fixed.px: 32
+align-self: center
 role: $inherited.types.copy-regular
-color: $inherited.colors.text
-margin-left.px: 60
 
-
-
--- ftd.text: **Label**
-link: http://127.0.0.1:8000/
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-margin-left.px: 80
-
-
-
--- ftd.text: **Label**
+-- ftd.text: Label
 link: http://127.0.0.1:8000/
 color: $inherited.colors.text
-role: $inherited.types.copy-regular
-margin-left.px: 100
+style: bold
 
--- ftd.text: **Label**
+-- ftd.text: Label
 link: http://127.0.0.1:8000/
 color: $inherited.colors.text
-role: $inherited.types.copy-regular
-margin-left.px: 120
 
+-- ftd.text: Label
+link: http://127.0.0.1:8000/
+color: $inherited.colors.text
+
+-- ftd.text: Label
+link: http://127.0.0.1:8000/
+color: $inherited.colors.text
 
 -- end: ftd.row
-
 
 -- end: ftd.row
 
 -- end: header
 
 
+
+
+
+
+
 -- component main:
-
--- ftd.row:
-
-
 
 -- ftd.image:
 src: $assets.files.images.first.svg
-margin-bottom.px: 5000
+margin-bottom.px: 200
 height.fixed.px: 730
 width.fixed.px: 1160
 margin-left.px: 60
 padding-top.px: 80
-padding-left.px: 20
-padding-right.px: 20
-
-
--- end: ftd.row
+padding-horizontal.px: 20
+background.solid: $inherited.colors.background.base
 
 
 -- end: main
+
+
+
+
+
+
 
 
 -- component main2:
