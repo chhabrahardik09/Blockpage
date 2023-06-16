@@ -1,10 +1,9 @@
 -- import: fifthtry.github.io/dark-mode-switcher as dms
+-- import: chhabrahardik09.github.io/blockpage/button
+
+
 
 -- page: BlogPage
-
-
-
-
 
 
 -- component page:
@@ -28,13 +27,6 @@ width: fill-container
 -- end: ftd.column
 
 -- end: page
-
-
-
-
-
-
-
 
 
 
@@ -81,6 +73,22 @@ color: $inherited.colors.text
 
 -- end: ftd.row
 
+
+-- button.button: Login
+;; role: $inherited.types.button-large
+;; text-color: $button.monochrome-dark
+;; bg-color: $button.monochrome-light
+;; border-color: $button.shadow-color
+hover-shadow: $button.s 
+
+
+-- button.button: SignUp
+;; link: https://dev.mysql.com/doc/
+text-color: $button.monochrome-dark
+bg-color: $button.monochrome-light
+border-color: $button.shadow-color
+hover-shadow: $button.s 
+
 -- end: ftd.row
 
 -- end: header
@@ -109,15 +117,58 @@ background.solid: $inherited.colors.background.base
 
 
 
-
-
-
-
 -- component main2:
 
 -- ftd.row:
+spacing.fixed.px: 450
+
+
 
 -- ftd.text: Hardik
+
+
+-- ftd.column:
+
+
+-- ftd.text: Fastn is officially open for business
+
+-- ftd.text: 
+padding.px: 12
+
+For the past year, our team has been working to bring instant, 
+fee-free payments to the small business community. 
+This first-of-its-kind financial tool can help small businesses earn more while making them less vulnerable to long processing times.
+
+
+With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.
+With Flex, you can run your business on one platform, seamlessly across all digital channels—and grow it anywhere.  With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform.
+
+
+With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.
+With Flex, you can run your business on one platform, seamlessly across all digital channels—and grow it anywhere.  With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform.
+
+
+“ With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  Flex is the only saas business platform that lets you run your business on one platform. ”
+
+
+
+-- ds.markdown:
+
+
+- Unordered lists are displayed with a preceding bullet point.
+- Lists can be nested as deeply as needed, and they may alternate between ordered and unordered.
+- Lists should align with the font-size, font-weight, and line-height of paragraphs, but are styled with bullets or numbers.
+- Lists can have similar children elements as paragraphs to provide emphasis on a certain word or phrase.
+- You can switch between an unordered list and ordered list by changing the component variant in the Design panel.
+- You can remove a list item from the default component by deleting it in the Layers panel.
+  
+
+
+
+-- end: ftd.column
+
 
 -- end: ftd.row
 
