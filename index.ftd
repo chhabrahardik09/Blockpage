@@ -15,12 +15,18 @@ ftd.color-scheme colors: $cs.main
 color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 width: fill-container
+padding-horizontal.px: 42
+align-content: center
 
 -- header:
 
 -- main:
 
 -- main2:
+
+-- footer:
+
+-- footer2:
 
 -- dms.dark-mode-switcher-float:
 
@@ -58,6 +64,7 @@ align-self: center
 role: $inherited.types.copy-regular
 
 -- ftd.text: Label
+margin-left.px: 16
 link: http://127.0.0.1:8000/
 color: $inherited.colors.text
 style: bold
@@ -80,6 +87,7 @@ color: $inherited.colors.text
 
 
 -- ftd.row:
+spacing.fixed.px: 15
 
 -- button.button: Login
 ;; role: $inherited.types.button-large
@@ -96,9 +104,11 @@ bg-color: $button.monochrome-light
 border-color: $button.shadow-color
 hover-shadow: $button.s 
 
+
 -- end: ftd.row
 
 -- end: ftd.row
+
 
 -- end: header
 
@@ -112,7 +122,7 @@ hover-shadow: $button.s
 
 -- ftd.image:
 src: $assets.files.images.first.svg
-margin-bottom.px: 200
+margin-bottom.px: 42
 height.fixed.px: 730
 width.fixed.px: 1160
 margin-left.px: 60
@@ -129,19 +139,59 @@ background.solid: $inherited.colors.background.base
 -- component main2:
 
 -- ftd.row:
-spacing.fixed.px: 450
+width: fill-container
+spacing.fixed.px: 100
 
 
 
--- ftd.text: Hardik
+-- ftd.column:
+
+-- ftd.text: September 6 2022
+padding.px: 5
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+
+
+-- ftd.image:
+src: $assets.files.images.author.png
+margin-top.px: 2
+margin-bottom.px: 30
+height.fixed.px: 40
+width.fixed.px: 161
+background.solid: $inherited.colors.background.base
+
+
+-- ftd.text: Share 
+margin-bottom.px: 30
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.image:
+src: $assets.files.images.social.png
+margin-top.px: 2
+margin-bottom.px: 30
+height.fixed.px: 24
+width.fixed.px: 216
+background.solid: $inherited.colors.background.base
+
+
+-- end: ftd.column
 
 
 -- ftd.column:
 
 
 -- ftd.text: Fastn is officially open for business
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.heading-large
 
 -- ftd.text: 
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
 padding.px: 12
 
 For the past year, our team has been working to bring instant, 
@@ -159,9 +209,88 @@ With Flex, you can run your business on one platform, seamlessly across all digi
 Flex is the only saas business platform that lets you run your business on one platform.
 
 
-“ With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  Flex is the only saas business platform that lets you run your business on one platform. ”
+“ With a single point of view, Flex integrates customer data and
+ marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  Flex is the only saas business platform that lets you run your business on one platform. ”
 
 
+
+-- ds.markdown:
+
+
+
+- Unordered lists are displayed with a preceding bullet point.
+- Lists can be nested as deeply as needed, and they may alternate between ordered and unordered.
+- Lists should align with the font-size, font-weight, and line-height of paragraphs, but are styled with bullets or numbers.
+- Lists can have similar children elements as paragraphs to provide emphasis on a certain word or phrase.
+- You can switch between an unordered list and ordered list by changing the component variant in the Design panel.
+- You can remove a list item from the default component by deleting it in the Layers panel.
+  
+-- ftd.column:
+spacing: space-between
+
+-- ftd.image:
+src: $assets.files.images.everyone.png
+margin-bottom.px: 42
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 2
+background.solid: $inherited.colors.background.base
+
+-- ftd.image:
+src: $assets.files.images.second.png
+margin-top.px: 2
+margin-bottom.px: 42
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+-- end: ftd.column
+
+-- ftd.text: Flex is a simple, beautiful tool that helps you work sanely
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.heading-small
+
+-- ftd.text: 
+margin-bottom.px: 4
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+The only SaaS business platform that combines CRM, marketing automation & commerce.
+
+With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  
+Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.
+With Flex, you can run your business on one platform, seamlessly across all digital channels and grow it anywhere.  With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform.
+
+
+
+-- ftd.image:
+src: $assets.files.images.third.png
+margin-top.px: 2
+margin-bottom.px: 42
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+
+-- ftd.text: Flex is a simple, beautiful tool that helps you work sanely
+margin-bottom.px: 8
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.heading-small
+
+-- ftd.text: 
+margin-bottom.px: 20
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+The only SaaS business platform that combines CRM, marketing automation & commerce.
 
 -- ds.markdown:
 
@@ -172,8 +301,74 @@ Flex is the only saas business platform that lets you run your business on one p
 - Lists can have similar children elements as paragraphs to provide emphasis on a certain word or phrase.
 - You can switch between an unordered list and ordered list by changing the component variant in the Design panel.
 - You can remove a list item from the default component by deleting it in the Layers panel.
-  
 
+
+-- ftd.text: Flex is a simple, beautiful tool that helps you work sanely
+margin-bottom.px: 8
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.heading-small
+
+
+-- ftd.text: 
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+
+The only SaaS business platform that combines CRM, marketing automation & commerce.
+
+With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.
+With Flex, you can run your business on one platform, seamlessly across all digital channels—and grow it anywhere.  With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform.
+
+-- ds.markdown:
+
+
+- Unordered lists are displayed with a preceding bullet point.
+- Lists can be nested as deeply as needed, and they may alternate between ordered and unordered.
+- Lists should align with the font-size, font-weight, and line-height of paragraphs, but are styled with bullets or numbers.
+- Lists can have similar children elements as paragraphs to provide emphasis on a certain word or phrase.
+- You can switch between an unordered list and ordered list by changing the component variant in the Design panel.
+- You can remove a list item from the default component by deleting it in the Layers panel.
+
+-- ftd.image:
+src: $assets.files.images.fourth.png
+margin-top.px: 2
+margin-bottom.px: 42
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+-- ftd.text: Flex is a simple, beautiful tool that helps you work sanely
+margin-bottom.px: 8
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.heading-small
+
+-- ftd.text: 
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+The only SaaS business platform that combines CRM, marketing automation & commerce.
+
+With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.
+With Flex, you can run your business on one platform, seamlessly across all digital channels—and grow it anywhere.  With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform.
+
+-- ftd.image:
+src: $assets.files.images.fifth.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
 
 
 -- end: ftd.column
@@ -181,5 +376,225 @@ Flex is the only saas business platform that lets you run your business on one p
 
 -- end: ftd.row
 
-
 -- end: main2
+
+
+-- component footer:
+
+-- ftd.row:
+width: fill-container
+wrap: true
+
+-- ftd.text: More Blogs
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.heading-large
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing: space-evenly
+margin-bottom.px: 15
+
+-- ftd.image:
+src: $assets.files.images.blog3.png
+margin-top.px: 2
+;; margin-bottom.px: 22
+height.fixed.px: 350
+width.fixed.px: 400
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+
+-- ftd.image:
+src: $assets.files.images.blog2.png
+margin-top.px: 2
+;; margin-bottom.px: 42
+height.fixed.px: 350
+width.fixed.px: 400
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+-- ftd.image:
+src: $assets.files.images.blog3.png
+margin-top.px: 2
+;; margin-bottom.px: 42
+height.fixed.px: 350
+width.fixed.px: 350
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.image:
+src: $assets.files.images.last.png
+margin-top.px: 2
+margin-bottom.px: 42
+height.fixed.px: 210
+width.fixed.px: 1116
+background.solid: $inherited.colors.background.base
+
+
+-- end: ftd.row
+
+
+-- end: ftd.row
+
+
+-- end: footer
+
+
+
+-- component footer2:
+
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing: space-evenly
+
+-- ftd.column:
+
+-- ftd.text: Fastn
+margin-bottom.px: 42
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.text:
+margin-bottom.px: 30
+
+Stay in touch with everything you need
+
+
+
+-- ftd.image:
+src: $assets.files.images.social.png
+margin-top.px: 2
+margin-bottom.px: 30
+height.fixed.px: 24
+width.fixed.px: 216
+background.solid: $inherited.colors.background.base
+
+-- ftd.text: Copyright ©2022. Fastn Inc. 
+margin-bottom.px: 30
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+-- ftd.column: 
+
+-- ftd.text: HEADING
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+
+
+-- end: ftd.column
+
+
+
+-- ftd.column: 
+
+-- ftd.text: HEADING
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- end: ftd.column
+
+
+
+-- ftd.column: 
+
+-- ftd.text: HEADING
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- end: ftd.column
+
+
+
+-- end: ftd.row
+
+
+-- end: footer2
