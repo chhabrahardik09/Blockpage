@@ -37,9 +37,12 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 background.solid: $inherited.colors.background.step-1
-spacing.fixed.px: 48
+spacing: space-between
 padding-horizontal.px: 40
 padding-vertical.px: 40
+
+
+-- ftd.row:
 
 -- ftd.text: **Fastn**
 padding-top.px: 10
@@ -73,13 +76,17 @@ color: $inherited.colors.text
 
 -- end: ftd.row
 
+-- end: ftd.row
+
+
+-- ftd.row:
 
 -- button.button: Login
 ;; role: $inherited.types.button-large
 ;; text-color: $button.monochrome-dark
 ;; bg-color: $button.monochrome-light
 ;; border-color: $button.shadow-color
-hover-shadow: $button.s 
+hover-shadow: $button.s
 
 
 -- button.button: SignUp
@@ -88,6 +95,8 @@ text-color: $button.monochrome-dark
 bg-color: $button.monochrome-light
 border-color: $button.shadow-color
 hover-shadow: $button.s 
+
+-- end: ftd.row
 
 -- end: ftd.row
 

@@ -2,7 +2,7 @@
 caption title:
 optional string link:
 ftd.color text-color: $inherited.colors.text-strong
-ftd.color bg-color: $inherited.colors.background-base
+ftd.color bg-color: $inherited.colors.background.base
 ftd.color border-color: $inherited.colors.border-strong
 optional ftd.shadow hover-shadow:
 boolean $is-hover: false
