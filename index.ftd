@@ -139,11 +139,46 @@ background.solid: $inherited.colors.background.base
 -- component main2:
 
 -- ftd.row:
-spacing.fixed.px: 250
+width: fill-container
+spacing.fixed.px: 100
 
 
 
--- ftd.text: Hardik
+-- ftd.column:
+
+-- ftd.text: September 6 2022
+padding.px: 5
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+
+
+-- ftd.image:
+src: $assets.files.images.author.png
+margin-top.px: 2
+margin-bottom.px: 30
+height.fixed.px: 40
+width.fixed.px: 161
+background.solid: $inherited.colors.background.base
+
+
+-- ftd.text: Share 
+margin-bottom.px: 30
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.image:
+src: $assets.files.images.social.png
+margin-top.px: 2
+margin-bottom.px: 30
+height.fixed.px: 24
+width.fixed.px: 216
+background.solid: $inherited.colors.background.base
+
+
+-- end: ftd.column
 
 
 -- ftd.column:
@@ -400,9 +435,8 @@ background.solid: $inherited.colors.background.base
 src: $assets.files.images.last.png
 margin-top.px: 2
 margin-bottom.px: 42
-height.fixed.px: 62
-width.fixed.px: 459
-padding-top.px: 80
+height.fixed.px: 210
+width.fixed.px: 1116
 background.solid: $inherited.colors.background.base
 
 
@@ -417,6 +451,150 @@ background.solid: $inherited.colors.background.base
 
 
 -- component footer2:
+
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing: space-evenly
+
+-- ftd.column:
+
+-- ftd.text: Fastn
+margin-bottom.px: 42
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.text:
+margin-bottom.px: 30
+
+Stay in touch with everything you need
+
+
+
+-- ftd.image:
+src: $assets.files.images.social.png
+margin-top.px: 2
+margin-bottom.px: 30
+height.fixed.px: 24
+width.fixed.px: 216
+background.solid: $inherited.colors.background.base
+
+-- ftd.text: Copyright ©2022. Fastn Inc. 
+margin-bottom.px: 30
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+-- ftd.column: 
+
+-- ftd.text: HEADING
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+
+
+-- end: ftd.column
+
+
+
+-- ftd.column: 
+
+-- ftd.text: HEADING
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- end: ftd.column
+
+
+
+-- ftd.column: 
+
+-- ftd.text: HEADING
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- ftd.text: Footer Link 01
+margin-top.px: 8
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+
+-- end: ftd.column
+
+
+
+-- end: ftd.row
 
 
 -- end: footer2
