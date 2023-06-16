@@ -22,6 +22,8 @@ width: fill-container
 
 -- main2:
 
+-- footer:
+
 -- dms.dark-mode-switcher-float:
 
 -- end: ftd.column
@@ -100,6 +102,7 @@ hover-shadow: $button.s
 
 -- end: ftd.row
 
+
 -- end: header
 
 
@@ -140,6 +143,9 @@ spacing.fixed.px: 450
 
 
 -- ftd.text: Fastn is officially open for business
+color: $inherited.colors.text-strong
+style: bold
+role: $inherited.types.heading-large
 
 -- ftd.text: 
 padding.px: 12
@@ -159,7 +165,8 @@ With Flex, you can run your business on one platform, seamlessly across all digi
 Flex is the only saas business platform that lets you run your business on one platform.
 
 
-“ With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  Flex is the only saas business platform that lets you run your business on one platform. ”
+“ With a single point of view, Flex integrates customer data and
+ marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  Flex is the only saas business platform that lets you run your business on one platform. ”
 
 
 
@@ -173,7 +180,122 @@ Flex is the only saas business platform that lets you run your business on one p
 - You can switch between an unordered list and ordered list by changing the component variant in the Design panel.
 - You can remove a list item from the default component by deleting it in the Layers panel.
   
+-- ftd.column:
+spacing: space-between
 
+-- ftd.image:
+src: $assets.files.images.everyone.png
+margin-bottom.px: 200
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 2
+background.solid: $inherited.colors.background.base
+
+-- ftd.image:
+src: $assets.files.images.second.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+-- end: ftd.column
+
+-- ftd.text: Flex is a simple, beautiful tool that helps you work sanely
+
+-- ftd.text: 
+
+The only SaaS business platform that combines CRM, marketing automation & commerce.
+
+With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.  
+Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.
+With Flex, you can run your business on one platform, seamlessly across all digital channels—and grow it anywhere.  With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform.
+
+
+
+-- ftd.image:
+src: $assets.files.images.third.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+
+-- ftd.text: Flex is a simple, beautiful tool that helps you work sanely
+
+-- ftd.text: 
+
+The only SaaS business platform that combines CRM, marketing automation & commerce.
+
+-- ds.markdown:
+
+
+- Unordered lists are displayed with a preceding bullet point.
+- Lists can be nested as deeply as needed, and they may alternate between ordered and unordered.
+- Lists should align with the font-size, font-weight, and line-height of paragraphs, but are styled with bullets or numbers.
+- Lists can have similar children elements as paragraphs to provide emphasis on a certain word or phrase.
+- You can switch between an unordered list and ordered list by changing the component variant in the Design panel.
+- You can remove a list item from the default component by deleting it in the Layers panel.
+
+
+-- ftd.text: Flex is a simple, beautiful tool that helps you work sanely
+
+-- ftd.text: 
+
+The only SaaS business platform that combines CRM, marketing automation & commerce.
+
+With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.
+With Flex, you can run your business on one platform, seamlessly across all digital channels—and grow it anywhere.  With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform.
+
+-- ds.markdown:
+
+
+- Unordered lists are displayed with a preceding bullet point.
+- Lists can be nested as deeply as needed, and they may alternate between ordered and unordered.
+- Lists should align with the font-size, font-weight, and line-height of paragraphs, but are styled with bullets or numbers.
+- Lists can have similar children elements as paragraphs to provide emphasis on a certain word or phrase.
+- You can switch between an unordered list and ordered list by changing the component variant in the Design panel.
+- You can remove a list item from the default component by deleting it in the Layers panel.
+
+-- ftd.image:
+src: $assets.files.images.fourth.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+-- ftd.text: Flex is a simple, beautiful tool that helps you work sanely
+
+-- ftd.text: 
+
+The only SaaS business platform that combines CRM, marketing automation & commerce.
+
+With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.
+With Flex, you can run your business on one platform, seamlessly across all digital channels—and grow it anywhere.  With a single point of view, Flex integrates customer data and marketing tools in one flexible cloud platform that lets you get business results wherever they show up.
+Flex is the only saas business platform that lets you run your business on one platform.
+
+-- ftd.image:
+src: $assets.files.images.fifth.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 300
+width.fixed.px: 819
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
 
 
 -- end: ftd.column
@@ -181,5 +303,66 @@ Flex is the only saas business platform that lets you run your business on one p
 
 -- end: ftd.row
 
-
 -- end: main2
+
+
+-- component footer:
+
+-- ftd.row:
+
+-- ftd.text: More Blogs
+
+-- ftd.row:
+
+-- ftd.image:
+src: $assets.files.images.blog1.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 536
+width.fixed.px: 424
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+
+-- ftd.image:
+src: $assets.files.images.blog2.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 536
+width.fixed.px: 424
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+-- ftd.image:
+src: $assets.files.images.blog3.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 536
+width.fixed.px: 424
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.image:
+src: $assets.files.images.last.png
+margin-top.px: 2
+margin-bottom.px: 200
+height.fixed.px: 62
+width.fixed.px: 459
+padding-top.px: 80
+padding.px: 0
+background.solid: $inherited.colors.background.base
+
+
+-- end: ftd.row
+
+
+-- end: ftd.row
+
+-- end: footer
