@@ -7,7 +7,13 @@
 $processor$: pr.sitemap
 
 -- pr.toc-item list sections:
+$processor$: pr.toc
 
+-- pr.sitemap-data footer-toc:
+$processor$: pr.full-sitemap
+
+
+-- pr.toc-item list footer-list:
 $processor$: pr.toc
 
 
@@ -36,6 +42,7 @@ align-content: center
 -- footer:
 
 -- footer2:
+footer-links: $footer-links
 
 -- dms.dark-mode-switcher-float:
 
@@ -460,9 +467,35 @@ background.solid: $inherited.colors.background.base
 -- end: footer
 
 
+-- pr.toc-item list footer-links:
+$processor$: pr.toc
+
+- Heading1: index.html
+  - Footer link 1: /
+  - Footer link 2: /
+  - Footer link 3: /
+  - Footer link 4: /
+- Heading2: index.html
+  - Footer link 1: /
+  - Footer link 2: /
+  - Footer link 3: /
+  - Footer link 4: /
+- Heading3: index.html
+  - Footer link 1: /
+  - Footer link 2: /
+  - Footer link 3: /
+  - Footer link 4: /
+- Heading4: index.html
+  - Footer link 1: /
+  - Footer link 2: /
+  - Footer link 3: /
+  - Footer link 4: /
+
+
+
 
 -- component footer2:
-
+pr.toc-item list footer-links: $footer-links
 
 -- ftd.row:
 width: fill-container
@@ -483,7 +516,6 @@ margin-bottom.px: 30
 Stay in touch with everything you need
 
 
-
 -- ftd.image:
 src: $assets.files.images.social.png
 margin-top.px: 2
@@ -499,113 +531,88 @@ role: $inherited.types.copy-regular
 
 -- end: ftd.column
 
--- ftd.column: 
+-- ftd.row:
+width.fixed.percent: 70
+spacing: space-between
 
--- ftd.text: HEADING
-color: $inherited.colors.text-strong
-style: bold
-role: $inherited.types.copy-regular
+-- footer-list-ui: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+children: $obj.children
+$loop$: $footer2.footer-links as $obj
 
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
-
-
--- end: ftd.column
-
-
-
--- ftd.column: 
-
--- ftd.text: HEADING
-color: $inherited.colors.text-strong
-style: bold
-role: $inherited.types.copy-regular
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
--- end: ftd.column
-
-
-
--- ftd.column: 
-
--- ftd.text: HEADING
-color: $inherited.colors.text-strong
-style: bold
-role: $inherited.types.copy-regular
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
--- ftd.text: Footer Link 01
-margin-top.px: 8
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
-
--- end: ftd.column
-
-
+-- end: ftd.row
 
 -- end: ftd.row
 
 
+
 -- end: footer2
+
+
+
+
+
+-- component footer-list-ui:
+caption title:
+optional string url:
+boolean is-active:
+pr.toc-item list children:
+
+-- ftd.column:
+spacing.fixed.px: 6
+
+-- ftd.text: $footer-list-ui.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+link: $footer-list-ui.url
+width: fill-container
+style: bold
+
+-- footer-list-child: $obj.title
+if: { !ftd.is_empty(footer-list-ui.children) }
+url: $obj.url
+is-active: $obj.is-active
+children: $obj.children
+$loop$: $footer-list-ui.children as $obj
+
+-- end: ftd.column
+
+-- end: footer-list-ui
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component footer-list-child:
+caption title:
+optional string url:
+boolean is-active:
+pr.toc-item list children:
+
+-- ftd.column:
+
+-- ftd.text: $footer-list-child.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+link: $footer-list-child.url
+width: fill-container
+
+-- footer-list-child: $obj.title
+if: { !ftd.is_empty(footer-list-child.children) }
+url: $obj.url
+is-active: $obj.is-active
+children: $obj.children
+$loop$: $footer-list-child.children as $obj
+
+-- end: ftd.column
+
+-- end: footer-list-child
