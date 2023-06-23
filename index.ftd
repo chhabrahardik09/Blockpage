@@ -495,7 +495,7 @@ $processor$: pr.toc
 
 
 -- component footer2:
-pr.toc-item list footer-links: $footer-toc.sections
+pr.toc-item list footer-links: $footer-links
 
 -- ftd.row:
 width: fill-container
@@ -514,7 +514,6 @@ role: $inherited.types.copy-regular
 margin-bottom.px: 30
 
 Stay in touch with everything you need
-
 
 
 -- ftd.image:
@@ -536,15 +535,13 @@ role: $inherited.types.copy-regular
 width.fixed.percent: 70
 spacing: space-between
 
--- footer-list: $obj.title
+-- footer-list-ui: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 children: $obj.children
 $loop$: $footer2.footer-links as $obj
 
 -- end: ftd.row
-
-
 
 -- end: ftd.row
 
@@ -553,7 +550,10 @@ $loop$: $footer2.footer-links as $obj
 -- end: footer2
 
 
--- component footer-list:
+
+
+
+-- component footer-list-ui:
 caption title:
 optional string url:
 boolean is-active:
@@ -562,23 +562,35 @@ pr.toc-item list children:
 -- ftd.column:
 spacing.fixed.px: 6
 
--- ftd.text: $footer-list.title
+-- ftd.text: $footer-list-ui.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-link: $footer-list.url
+link: $footer-list-ui.url
 width: fill-container
 style: bold
 
 -- footer-list-child: $obj.title
-if: { !ftd.is_empty(footer-list.children) }
+if: { !ftd.is_empty(footer-list-ui.children) }
 url: $obj.url
 is-active: $obj.is-active
 children: $obj.children
-$loop$: $footer-list.children as $obj
+$loop$: $footer-list-ui.children as $obj
 
 -- end: ftd.column
 
--- end: footer-list
+-- end: footer-list-ui
+
+
+
+
+
+
+
+
+
+
+
+
 
 -- component footer-list-child:
 caption title:
@@ -589,7 +601,7 @@ pr.toc-item list children:
 -- ftd.column:
 
 -- ftd.text: $footer-list-child.title
-role: $fonts.copy-regular
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 link: $footer-list-child.url
 width: fill-container
@@ -604,5 +616,3 @@ $loop$: $footer-list-child.children as $obj
 -- end: ftd.column
 
 -- end: footer-list-child
-
-
