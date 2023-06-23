@@ -41,7 +41,7 @@ dark: black
 light: #cae9ee
 dark: #e4b0ac
 
--- ftd.shadow s:
+/-- ftd.shadow s:
 color: $shadow-color
 x-offset.px: 0
 y-offset.px: 0
