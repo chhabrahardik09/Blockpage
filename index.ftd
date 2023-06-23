@@ -19,10 +19,18 @@ $processor$: pr.toc
 
 -- page: BlogPage
 
+-- main:
+-- main2:
+
+-- end: page
+
+
+
 
 -- component page:
 optional caption title:
 ftd.color-scheme colors: $cs.main
+children ui:
 
 
 -- ftd.column:
@@ -34,10 +42,11 @@ align-content: center
 
 -- header:
 
+-- ftd.column:
+width: fill-container
+children: $page.ui
 
--- main:
-
--- main2:
+-- end: ftd.column
 
 -- footer:
 
